@@ -20,7 +20,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 a { color: inherit; text-decoration: none; }
 .site-header { align-items: center; background: var(--paper); display: flex; height: 82px; justify-content: space-between; padding: 0 6vw; position: relative; z-index: 5; }
 .brand { align-items: center; color: var(--maroon); display: inline-flex; font-family: var(--serif); font-size: 28px; font-weight: 600; letter-spacing: .08em; }
-.brand img { display: block; height: 42px; width:84px; }
+.brand img { display: block; height: auto; max-height: 42px; max-width: min(18vw, 120px); width: auto; }
 .brand span { color: var(--gold); font-size: 20px; }
 .site-nav { align-items: center; display: flex; gap: 34px; text-transform: uppercase; font-size: 10px; letter-spacing: .16em; }
 .site-nav a { color: var(--muted); transition: color .2s ease; }
