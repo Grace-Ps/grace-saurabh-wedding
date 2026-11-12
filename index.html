@@ -71,10 +71,10 @@
         <div class="section-label">03 / Gallery</div>
         <div class="gallery-heading">
           <div>
-            <p class="script-line">Moments we will always keep</p>
-            <h2>Our story,<br /><i>in photographs.</i></h2>
+            <p class="script-line">A Date to Remember</p>
+            <h2>Smiles, love &amp; little moments,<br /><i>all captured in frames.</i></h2>
           </div>
-          <p class="body-copy">A little window into the moments that brought us here. More memories will find their place here soon.</p>
+          <p class="body-copy">A collection of beautiful photographs filled with love, laughter and excitement for the celebration ahead.</p>
         </div>
         <div class="gallery-grid">
           <figure class="gallery-placeholder gallery-placeholder-tall">
@@ -115,13 +115,38 @@
         </div>
         <div class="venue-stamp" aria-hidden="true"><span>14</span><small>November<br />2026</small></div>
       </section>
+
     </main>
 
     <footer class="site-footer">
-      <span class="footer-logo"><img src="img/GS_logo.png" alt="Grace and Saurabh monogram logo" /></span>
-      <span>With joy, always.</span>
-      <span>Carmel Hall, Chittor Road, Ernakulam</span>
+      <div class="footer-brand-group">
+        <span class="footer-logo"><img src="img/GS_logo.png" alt="Grace and Saurabh monogram logo" /></span>
+        <a href="#guestbook-modal" class="wishes-link footer-wishes-link">Leave a wish for us</a>
+      </div>
     </footer>
+
+    <div id="guestbook-modal" class="guestbook-modal" aria-hidden="true">
+      <div class="guestbook-panel" role="dialog" aria-modal="true" aria-labelledby="guestbook-title">
+        <button class="guestbook-close" type="button" aria-label="Close guestbook form">×</button>
+        <h3 id="guestbook-title">Leave a wish for us</h3>
+        <p id="guestbook-feedback" class="guestbook-feedback" role="status" hidden>Thank you for your lovely wishes. Returning to the invitation...</p>
+        <form id="guestbook-form">
+          <div class="guestbook-honey" aria-hidden="true">
+            <label for="guest-website">Website</label>
+            <input id="guest-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <label for="guest-name">Name (optional)</label>
+          <input id="guest-name" name="name" type="text" maxlength="80" placeholder="Your name" />
+
+          <label for="guest-message">Message</label>
+          <textarea id="guest-message" name="message" rows="5" maxlength="500" placeholder="Write your wish for the couple" required></textarea>
+
+          <button type="submit" class="guestbook-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <iframe name="guestbook-response-frame" title="Guestbook submission response" hidden></iframe>
     <script src="script.js"></script>
   </body>
 </html>

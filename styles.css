@@ -94,10 +94,35 @@ h1 em { color: var(--gold-light); font-size: .65em; font-style: normal; vertical
 .venue-stamp span { font-family: var(--serif); font-size: 66px; line-height: .7; }
 .venue-stamp small { font-size: 10px; letter-spacing: .12em; line-height: 1.5; margin-top: 15px; text-align: center; text-transform: uppercase; }
 .venue-content .button { margin-top: 18px; }
+.wishes-callout { margin: 0 auto 48px; max-width: 1180px; padding: 0 6vw; }
+.wishes-link { background: var(--maroon); border: 1px solid var(--gold); color: var(--paper); display: inline-flex; font-size: 11px; font-weight: 600; letter-spacing: .16em; padding: 16px 24px; text-transform: uppercase; transition: transform .2s ease, background .2s ease; }
+.wishes-link:hover { background: var(--deep-maroon); transform: translateY(-1px); }
 .site-footer { background: var(--deep-maroon); color: #e3cfb9; display: flex; font-size: 10px; justify-content: space-between; letter-spacing: .14em; padding: 24px 6vw; text-transform: uppercase; }
+.footer-brand-group { align-items: center; display: inline-flex; gap: 18px; }
 .site-footer .footer-logo { align-items: center; display: inline-flex; }
 .site-footer .footer-logo img { display: block; height: 28px; width: auto; }
+.footer-wishes-link { padding: 10px 14px; }
 .site-footer span:first-child { color: #f2dcc1; font-family: var(--serif); font-size: 19px; letter-spacing: .08em; }
+.guestbook-modal { background: rgba(26, 9, 15, .7); display: none; inset: 0; justify-content: center; padding: 24px; position: fixed; z-index: 20; }
+.guestbook-modal.is-open { display: flex; }
+.guestbook-panel { background: var(--paper); border: 1px solid var(--gold); max-width: 520px; padding: 28px 24px 22px; position: relative; width: 100%; }
+.guestbook-close { background: transparent; border: 0; color: var(--maroon); cursor: pointer; font-size: 30px; line-height: 1; position: absolute; right: 14px; top: 8px; }
+.guestbook-panel h3 { color: var(--maroon); font-family: var(--serif); font-size: clamp(32px, 4vw, 42px); margin: 0 0 18px; }
+#guestbook-form { display: flex; flex-direction: column; gap: 12px; }
+#guestbook-form[hidden] { display: none; }
+#guestbook-form label { color: var(--maroon); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+#guestbook-form input, #guestbook-form textarea { border: 1px solid var(--line); font: inherit; padding: 12px 14px; resize: vertical; }
+#guestbook-form textarea { min-height: 130px; }
+.guestbook-submit { background: var(--maroon); border: 1px solid var(--gold); color: var(--paper); cursor: pointer; font-size: 11px; letter-spacing: .16em; margin-top: 8px; padding: 14px 18px; text-transform: uppercase; }
+.guestbook-submit:disabled { cursor: wait; opacity: .7; }
+.guestbook-honey { height: 1px; left: -10000px; overflow: hidden; position: absolute; width: 1px; }
+.guestbook-message { margin-top: 14px; }
+.guestbook-feedback { color: var(--maroon); font-family: var(--serif); font-size: 24px; line-height: 1.35; margin: 14px 0 4px; }
+
+@media (max-width: 700px) {
+  .guestbook-panel { padding: 28px 18px 20px; }
+  .footer-brand-group { flex-wrap: wrap; gap: 10px; }
+}
 
 @media (max-width: 700px) {
   .site-header { height: 68px; padding: 0 24px; }
