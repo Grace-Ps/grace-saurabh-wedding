@@ -19,7 +19,8 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.6; }
 a { color: inherit; text-decoration: none; }
 .site-header { align-items: center; background: var(--paper); display: flex; height: 82px; justify-content: space-between; padding: 0 6vw; position: relative; z-index: 5; }
-.brand { color: var(--maroon); font-family: var(--serif); font-size: 28px; font-weight: 600; letter-spacing: .08em; }
+.brand { align-items: center; color: var(--maroon); display: inline-flex; font-family: var(--serif); font-size: 28px; font-weight: 600; letter-spacing: .08em; }
+.brand img { display: block; height: 42px; width:84px; }
 .brand span { color: var(--gold); font-size: 20px; }
 .site-nav { align-items: center; display: flex; gap: 34px; text-transform: uppercase; font-size: 10px; letter-spacing: .16em; }
 .site-nav a { color: var(--muted); transition: color .2s ease; }
@@ -57,6 +58,7 @@ h1 em { color: var(--gold-light); font-size: .65em; font-style: normal; vertical
 .signature { color: var(--maroon); font-family: var(--serif); font-size: 20px; line-height: 1.25; margin-top: 36px; }
 .signature strong { font-size: 27px; font-weight: 600; }
 .story-mark { align-items: center; border: 1px solid var(--gold); color: var(--maroon); display: flex; flex-direction: column; font-family: var(--serif); font-size: 70px; justify-content: center; line-height: .65; min-height: 300px; outline: 1px solid rgba(178, 138, 74, .28); outline-offset: 7px; }
+.story-mark img { display: block; height: 130px; width: auto; }
 .story-mark span { color: var(--gold); font-size: 40px; }
 .details { background: var(--cream); max-width: none; padding-left: max(6vw, calc((100vw - 1180px) / 2)); padding-right: max(6vw, calc((100vw - 1180px) / 2)); }
 .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; }
@@ -93,6 +95,8 @@ h1 em { color: var(--gold-light); font-size: .65em; font-style: normal; vertical
 .venue-stamp small { font-size: 10px; letter-spacing: .12em; line-height: 1.5; margin-top: 15px; text-align: center; text-transform: uppercase; }
 .venue-content .button { margin-top: 18px; }
 .site-footer { background: var(--deep-maroon); color: #e3cfb9; display: flex; font-size: 10px; justify-content: space-between; letter-spacing: .14em; padding: 24px 6vw; text-transform: uppercase; }
+.site-footer .footer-logo { align-items: center; display: inline-flex; }
+.site-footer .footer-logo img { display: block; height: 28px; width: auto; }
 .site-footer span:first-child { color: #f2dcc1; font-family: var(--serif); font-size: 19px; letter-spacing: .08em; }
 
 @media (max-width: 700px) {
