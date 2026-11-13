@@ -85,7 +85,9 @@ h1 em { color: var(--gold-light); font-size: .65em; font-style: normal; vertical
 .countdown-band { align-items: center; background: var(--maroon); color: var(--paper); display: flex; gap: 8vw; justify-content: center; padding: 50px 6vw; }
 .countdown-band .eyebrow { color: #e2c7aa; margin: 0; }
 .countdown { display: flex; gap: clamp(22px, 5vw, 80px); }
-.countdown div { align-items: center; display: flex; flex-direction: column; min-width: 64px; }
+.countdown-units { display: flex; gap: clamp(22px, 5vw, 80px); }
+.countdown-now { font-family: var(--serif); font-size: clamp(32px, 4vw, 47px); margin: 0; text-align: center; }
+.countdown-units > div { align-items: center; display: flex; flex-direction: column; min-width: 64px; }
 .countdown strong { font-family: var(--serif); font-size: 47px; font-weight: 500; line-height: 1; }
 .countdown span { color: #e2c7aa; font-size: 9px; letter-spacing: .15em; text-transform: uppercase; }
 .venue { align-items: center; display: grid; grid-template-columns: .8fr 1.2fr .55fr; gap: 7vw; }
@@ -147,7 +149,8 @@ h1 em { color: var(--gold-light); font-size: .65em; font-style: normal; vertical
   .details-grid > div:first-child { margin-bottom: 45px; }
   .countdown-band { align-items: flex-start; flex-direction: column; gap: 26px; padding: 42px 24px; }
   .countdown { gap: 12px; justify-content: space-between; width: 100%; }
-  .countdown div { min-width: 57px; }
+  .countdown-units { gap: 12px; justify-content: space-between; width: 100%; }
+  .countdown-units > div { min-width: 57px; }
   .countdown strong { font-size: 38px; }
   .venue .section-label { margin-bottom: 35px; }
   .venue-stamp { height: 145px; margin: 55px auto 0; width: 145px; }

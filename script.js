@@ -116,10 +116,19 @@ guestbookForm?.addEventListener('submit', async (event) => {
 
 const countdown = document.querySelector('#countdown');
 const weddingDate = new Date(countdown?.dataset.date ?? '2026-11-14T11:30:00+05:30');
+const countdownUnits = countdown?.querySelector('[data-countdown-units]');
+const countdownNow = countdown?.querySelector('[data-countdown-now]');
 
 function updateCountdown() {
   const difference = weddingDate.getTime() - Date.now();
-  const remaining = Math.max(0, difference);
+  if (difference <= 0) {
+    if (countdownUnits) countdownUnits.hidden = true;
+    if (countdownNow) countdownNow.hidden = false;
+    window.clearInterval(countdownInterval);
+    return;
+  }
+
+  const remaining = difference;
   const units = {
     days: Math.floor(remaining / 86400000),
     hours: Math.floor((remaining / 3600000) % 24),
@@ -133,5 +142,5 @@ function updateCountdown() {
   });
 }
 
+const countdownInterval = window.setInterval(updateCountdown, 1000);
 updateCountdown();
-setInterval(updateCountdown, 1000);
