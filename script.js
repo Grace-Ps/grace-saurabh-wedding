@@ -115,7 +115,7 @@ guestbookForm?.addEventListener('submit', async (event) => {
 });
 
 const countdown = document.querySelector('#countdown');
-const weddingDate = new Date(countdown?.dataset.date ?? '2026-11-14T11:00:00+05:30');
+const weddingDate = new Date(countdown?.dataset.date ?? '2026-11-14T11:30:00+05:30');
 
 function updateCountdown() {
   const difference = weddingDate.getTime() - Date.now();
